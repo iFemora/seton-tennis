@@ -1,0 +1,8 @@
+
+body {font-family:sans-serif; background:#0a0f1c; color:#fff; margin:0}
+a {color:#9BFF45}
+header, footer {background:#0f1629; padding:1rem}
+.container {max-width:1000px; margin:0 auto; padding:0 1rem}
+nav a {margin-right:1rem}
+main {padding:2rem 0}
+.card {background:#1a2238; padding:1rem; border-radius:8px; margin-bottom:1rem}
