@@ -3,67 +3,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Members — Seton Community Tennis</title>
+  <title>Members</title>
   <meta name="description" content="" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%239BFF45' stroke='%23000000' stroke-width='4'/%3E%3Cpath d='M12 50c20-25 56-25 76 0' fill='none' stroke='%23000' stroke-width='4'/%3E%3Cpath d='M50 12c25 20 25 56 0 76' fill='none' stroke='%23000' stroke-width='4'/%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="/assets/styles.css" />
+  <base href="/seton-tennis/">
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
 <header>
   <div class="container nav">
-    <div class="logo"><span class="ball" aria-hidden="true"></span><span>Seton Community Tennis</span></div>
-    <nav aria-label="Primary">
-      <a href="/index.html">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/programs/index.html">Programs</a>
-      <a href="/members/index.html">Members</a>
-      <a href="/contact.html">Contact</a>
+    <div class="logo">Seton Community Tennis</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs/index.html">Programs</a>
+      <a href="members/index.html">Members</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 <main class="container">
-
-<section>
-  <h1 class="section-title">Membership</h1>
-  <div class="grid-3">
-    <div class="tile"><h3>Community</h3><p>Free</p><ul><li>Join socials</li><li>Newsletter</li><li>Public events</li></ul></div>
-    <div class="tile"><h3>Player</h3><p>$ — set later</p><ul><li>All socials</li><li>Clinic discounts</li><li>Ladder access</li></ul></div>
-    <div class="tile"><h3>Family</h3><p>$ — set later</p><ul><li>Up to 4 people</li><li>Junior priority</li><li>Event invites</li></ul></div>
-  </div>
-</section>
-
-<section id="join">
-  <h2 class="section-title">Join the Club</h2>
-  <div class="tile" style="display:grid;gap:.8rem">
-    <label>Full Name<input id="name" placeholder="Your name"/></label>
-    <label>Email<input id="email" type="email" placeholder="you@example.com"/></label>
-    <label>Playing Level<select id="level"><option>Beginner</option><option>Improver</option><option>Intermediate</option><option>Advanced</option></select></label>
-    <label>Message<textarea id="message" rows="4" placeholder="Tell us what you’re looking for (e.g., socials, clinics, ladder)"></textarea></label>
-    <button class="btn primary" onclick="mailtoJoin()">Send join request</button>
-    <p class="notice">Swap this later for a Google Form if you want responses in a Sheet.</p>
-  </div>
-</section>
-
-<script>
-function mailtoJoin(){{
-  const to='setontennis@example.com';
-  const name=document.getElementById('name').value||'';
-  const email=document.getElementById('email').value||'';
-  const level=document.getElementById('level').value||'';
-  const message=document.getElementById('message').value||'';
-  const subject=encodeURIComponent(`[Join Request] ${name} — ${level}`);
-  const body=encodeURIComponent(`Name: ${name}%0AEmail: ${email}%0ALevel: ${level}%0A%0A${message}`);
-  location.href=`mailto:${{to}}?subject=${{subject}}&body=${{body}}`;
-}}
-</script>
-
+<h1>Membership</h1><p>Details about joining the club.</p>
 </main>
 <footer>
-  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+  <div class="container">
     <p>© 2025 Seton Community Tennis</p>
-    <p class="notice">Free to host on GitHub Pages or Netlify.</p>
   </div>
 </footer>
-<script src="/assets/script.js"></script>
+<script src="assets/script.js"></script>
 </body>
 </html>
