@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Private Lessons — Seton Community Tennis</title>
+  
+<style>
+:root{--bg:#0a0f1c;--surface:#0f1629;--muted:#a6b6d9;--text:#edf2ff;--brand:#9BFF45}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  background:radial-gradient(1200px 600px at 90% -10%, #16254b, transparent 60%),radial-gradient(900px 400px at -15% -10%, #101b3b, transparent 50%),var(--bg);line-height:1.6}
+a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+.container{width:min(1180px,92%);margin:0 auto;padding:0 1rem}
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(8px);background:linear-gradient(180deg,rgba(10,15,28,.85),rgba(10,15,28,.55));border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+.logo{font-weight:800}
+.nav a{color:var(--text);opacity:.9;margin-left:1rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(255,255,255,.18);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));color:var(--text);padding:.55rem .9rem;border-radius:12px;cursor:pointer}
+main{padding:2.2rem 0}
+.hero{padding:3.2rem 0 1.8rem;display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+.hero h1{margin:0 0 .6rem;font-size:clamp(2rem,2rem + 1.8vw,3.4rem);line-height:1.08}
+.hero .sub{color:var(--muted);max-width:60ch}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:1rem}
+.section-title{font-size:1.65rem;margin:.2rem 0 1rem}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.grid-2{display:grid;grid-template-columns:1.2fr .8fr;gap:1rem}
+.tile{background:var(--surface);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:1rem}
+.notice{color:var(--muted);font-size:.95rem}
+footer{padding:2rem 0;border-top:1px solid rgba(255,255,255,.06);color:#a7b6db}
+@media (max-width:980px){.hero{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
+</style>
+
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="logo">Seton Community Tennis</div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../programs/index.html">Programs</a>
+      <a href="../members/index.html">Members</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+<section class="hero">
+  <div>
+    <h1>Private Lessons</h1>
+    <p class="sub">Get personalized coaching to accelerate your progress. 60‑minute 1:1 and semi‑private options.</p>
+    <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem">
+      <a class="btn" href="../contact.html">Request a time</a>
+      <a class="btn" href="index.html">All programs</a>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Offerings</h3>
+    <ul>
+      <li>1:1 — technique & tactics</li>
+      <li>Semi‑private — bring a friend</li>
+      <li>Video review — recorded analysis</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="container"><p>© 2025 Seton Community Tennis</p></div>
+</footer>
+
+<script>
+// highlight active link
+(function(){
+  var here = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('nav a').forEach(function(a){
+    var to = a.getAttribute('href');
+    if ((to === 'index.html' && (here === '' || here === 'index.html')) || to === here) {
+      a.style.textDecoration = 'underline';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
